@@ -8,8 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController /*, LipsumDelegate*/ {
 
+    @IBOutlet weak var lipsum: UILabel!
+    
+    
+    
+    @IBAction func buttonAction(_ sender: Any) {
+        //let lipsumClient = Lipsum()
+        //lipsumClient.get(with: self)
+        
+        let wrapper = LipsumWrapper()
+        
+        wrapper.get { (success, text, response, error) in
+            if success {
+                DispatchQueue.main.async {
+                    self.lipsum.text = text
+                }
+            }
+            else {
+                DispatchQueue.main.async {
+                    self.lipsum.text = "Fail"
+                }
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +45,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /*
+    // Lipsum Delegate
+    func didLoadText(text: String?, response: URLResponse?, error: Error?) {
+        DispatchQueue.main.async {
+            self.lipsum.text = text
+        }
+    }
+     */
 
 }
 

@@ -12,6 +12,8 @@
 		94628EC61EC5EFCF004728A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94628EC41EC5EFCF004728A3 /* Main.storyboard */; };
 		94628EC81EC5EFCF004728A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94628EC71EC5EFCF004728A3 /* Assets.xcassets */; };
 		94628ECB1EC5EFCF004728A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94628EC91EC5EFCF004728A3 /* LaunchScreen.storyboard */; };
+		94628ED31EC5F01B004728A3 /* Lipsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94628ED21EC5F01B004728A3 /* Lipsum.swift */; };
+		94628ED51EC6025F004728A3 /* LipsumWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94628ED41EC6025F004728A3 /* LipsumWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		94628EC71EC5EFCF004728A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94628ECA1EC5EFCF004728A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94628ECC1EC5EFCF004728A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94628ED21EC5F01B004728A3 /* Lipsum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lipsum.swift; sourceTree = "<group>"; };
+		94628ED41EC6025F004728A3 /* LipsumWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LipsumWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				94628EC01EC5EFCF004728A3 /* AppDelegate.swift */,
 				94628EC21EC5EFCF004728A3 /* ViewController.swift */,
+				94628ED21EC5F01B004728A3 /* Lipsum.swift */,
+				94628ED41EC6025F004728A3 /* LipsumWrapper.swift */,
 				94628EC41EC5EFCF004728A3 /* Main.storyboard */,
 				94628EC71EC5EFCF004728A3 /* Assets.xcassets */,
 				94628EC91EC5EFCF004728A3 /* LaunchScreen.storyboard */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94628ED31EC5F01B004728A3 /* Lipsum.swift in Sources */,
+				94628ED51EC6025F004728A3 /* LipsumWrapper.swift in Sources */,
 				94628EC31EC5EFCF004728A3 /* ViewController.swift in Sources */,
 				94628EC11EC5EFCF004728A3 /* AppDelegate.swift in Sources */,
 			);
